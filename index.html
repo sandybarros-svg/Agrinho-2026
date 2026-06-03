@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guia prático para o descarte correto de embalagens de defensivos agrícolas seguindo a Lei nº 9.974/00">
-    <title>Descarte Correto de Embalagens de Defensivos Agrícolas</title>
+    <meta name="description" content="Guia prático para preservação de minas de água no campo e gestão responsável de recursos hídricos">
+    <title>Preservação de Minas de Água no Campo</title>
     <style>
         :root {
-            --primary-color: #2e7d32;
-            --secondary-color: #388e3c;
-            --accent-color: #d32f2f;
-            --bg-color: #f4f6f4;
+            --primary-color: #0277bd;
+            --secondary-color: #0288d1;
+            --accent-color: #00897b;
+            --warning-color: #f57c00;
+            --bg-color: #e0f7fa;
             --text-color: #333;
         }
 
@@ -28,7 +29,7 @@
         }
 
         header {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             text-align: center;
             padding: 2rem 1rem;
@@ -57,6 +58,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.05);
             margin-bottom: 2rem;
+            border-top: 4px solid var(--primary-color);
         }
 
         h2 {
@@ -64,6 +66,9 @@
             margin-bottom: 1rem;
             border-bottom: 2px solid var(--bg-color);
             padding-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .passos {
@@ -92,14 +97,27 @@
         }
 
         .alerta {
-            background-color: #ffebee;
-            border-left: 5px solid var(--accent-color);
+            background-color: #fff3e0;
+            border-left: 5px solid var(--warning-color);
             padding: 1rem;
             border-radius: 4px;
             margin-top: 1rem;
         }
 
         .alerta h4 {
+            color: var(--warning-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .tip {
+            background-color: #e0f2f1;
+            border-left: 5px solid var(--accent-color);
+            padding: 1rem;
+            border-radius: 4px;
+            margin-top: 1rem;
+        }
+
+        .tip h4 {
             color: var(--accent-color);
             margin-bottom: 0.5rem;
         }
@@ -113,10 +131,28 @@
             margin-bottom: 0.5rem;
         }
 
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .grid-item {
+            background-color: #f0f9ff;
+            padding: 1.5rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary-color);
+        }
+
+        .grid-item strong {
+            color: var(--primary-color);
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
-            background-color: #333;
+            background-color: #01579b;
             color: white;
             margin-top: 4rem;
         }
@@ -133,80 +169,134 @@
             .card {
                 padding: 1.5rem;
             }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Logística Reversa no Campo</h1>
-        <p>Guia Prático para o Descarte de Embalagens de Defensivos Agrícolas</p>
+        <h1>💧 Preservação de Minas de Água</h1>
+        <p>Guia Prático para Proteger e Conservar Recursos Hídricos no Campo</p>
     </header>
 
     <main>
         <section class="card">
-            <h2>Por que o descarte correto é obrigatório?</h2>
-            <p>O descarte inadequado de embalagens de agroquímicos (venenos/defensivos) traz graves riscos de contaminação do solo, dos recursos hídricos e da saúde humana. No Brasil, a Lei nº 9.974/00 determina a responsabilidade compartilhada entre agricultores, canais de venda e indústrias para o retorno desses materiais.</p>
+            <h2>🌍 Por que preservar minas de água é essencial?</h2>
+            <p>As minas de água são fontes naturais fundamentais para a vida no campo, abastecendo propriedades rurais, animais e irrigação. A sua preservação garante disponibilidade de água de qualidade para gerações futuras, além de manter a biodiversidade e o equilíbrio ambiental da propriedade. A degradação desses recursos compromete a produção agrícola, a saúde humana e animal.</p>
         </section>
 
         <section class="card">
-            <h2>O Passo a Passo no Campo</h2>
+            <h2>🔍 Passos para Preservar Minas de Água</h2>
             <ol class="passos">
                 <li data-step="1">
-                    <strong>Tríplice Lavagem ou Lavagem sob Pressão:</strong>
-                    Imediatamente após esvaziar a embalagem rígida, lave-a três vezes (adicionando água até 1/4, agitando bem e despejando a água de lavagem dentro do tanque do pulverizador). Se o maquinário tiver a função de lavagem sob pressão, utilize-a por 30 segundos.
+                    <strong>Proteção da Área de Recarga:</strong>
+                    Identifique e proteja a região onde a água infiltra no solo. Mantenha a cobertura vegetal nativa, evite desmatamento e impeça o cultivo de plantas tóxicas. A vegetação reduz a erosão e filtra a água naturalmente.
                 </li>
                 <li data-step="2">
-                    <strong>Inutilização do Frasco:</strong>
-                    Após a lavagem, perfure o fundo da embalagem plástica ou metálica para evitar que ela seja reaproveitada. <em>Nunca danifique o rótulo ou o código de barras.</em>
+                    <strong>Controle do Escoamento de Água:</strong>
+                    Implante sistemas de drenagem adequados ao redor da mina para evitar o acúmulo de água estagnada. Use canaletas e bueiros para direcioná-la corretamente, prevenindo erosão e contaminação.
                 </li>
                 <li data-step="3">
-                    <strong>Armazenamento Temporário:</strong>
-                    Guarde as embalagens lavadas e suas respectivas tampas (separadas) em um depósito nas propriedades rurais. Esse local deve ser fechado, ventilado e seguro, longe de animais e alimentos.
+                    <strong>Eliminação de Possíveis Contaminantes:</strong>
+                    Mantenha afastados: defensivos agrícolas, fertilizantes químicos, esterco animal, fossas sépticas e óleos. Estabeleça uma zona de proteção de pelo menos 50 metros ao redor da mina.
                 </li>
                 <li data-step="4">
-                    <strong>Devolução:</strong>
-                    O agricultor tem o prazo de até 1 ano (a contar da data da compra) para devolver as embalagens na unidade de recebimento (posto ou central) indicada na nota fiscal de compra.
+                    <strong>Monitoramento e Limpeza Periódica:</strong>
+                    Realize limpeza regular removendo folhas, galhos e sedimentos. Verifique a qualidade da água (cor, odor, transparência). Teste periodicamente a água para patógenos e contaminantes.
+                </li>
+                <li data-step="5">
+                    <strong>Gestão da Fauna e Flora Local:</strong>
+                    Evite a entrada de animais na mina. Implante cercas de proteção. Mantenha a vegetação nativa e reflorestar com espécies adequadas ao clima.
+                </li>
+                <li data-step="6">
+                    <strong>Construção de Infraestrutura Adequada:</strong>
+                    Quando necessário captar água, use sistemas como caixas de água e bombas que não danifiquem a fonte. Evite canos e tubulações que vazem ou se deterioram.
                 </li>
             </ol>
         </section>
 
         <section class="card">
-            <h2>Tipos de Embalagens</h2>
-            <p><strong>Embalagens Laváveis:</strong> São as rígidas (plásticas ou metálicas) que contêm produtos que usam água no preparo da calda. Devem passar obrigatoriamente pelo processo de lavagem.</p>
-            <p style="margin-top: 1rem;"><strong>Embalagens Não Laváveis:</strong> São sacos plásticos, papelão e outras embalagens flexíveis que devem ser devolvidas sem qualquer processo de limpeza, apenas vazias.</p>
-        </section>
-
-        <section class="card">
-            <h2>Centros de Recebimento</h2>
-            <p>Procure pelo centro de recebimento mais próximo de sua propriedade. Geralmente estão localizados em:</p>
-            <ul class="lista-padrao">
-                <li>Lojas de insumos agrícolas</li>
-                <li>Postos de recolhimento</li>
-                <li>Cooperativas agrícolas</li>
-                <li>Distribuidoras de defensivos</li>
-            </ul>
-            <div class="alerta">
-                <h4>⚠️ Importante</h4>
-                <p>Verifique a localização na nota fiscal de compra ou consulte o fabricante do produto.</p>
+            <h2>✅ Boas Práticas Recomendadas</h2>
+            <div class="grid-2">
+                <div class="grid-item">
+                    <strong>✓ Reflorestar ao redor</strong>
+                    <p style="margin-top: 0.5rem;">Plante árvores nativas que ajudem a reter umidade do solo.</p>
+                </div>
+                <div class="grid-item">
+                    <strong>✓ Usar cobertura vegetal</strong>
+                    <p style="margin-top: 0.5rem;">Mulch reduz evaporação e protege o solo da compactação.</p>
+                </div>
+                <div class="grid-item">
+                    <strong>✓ Criar buffer zone</strong>
+                    <p style="margin-top: 0.5rem;">Zona de amortecimento com vegetação entre a mina e atividades agrícolas.</p>
+                </div>
+                <div class="grid-item">
+                    <strong>✓ Educação ambiental</strong>
+                    <p style="margin-top: 0.5rem;">Conscientize trabalhadores e vizinhos sobre importância da preservação.</p>
+                </div>
             </div>
         </section>
 
         <section class="card">
-            <h2>Consequências do Descarte Incorreto</h2>
+            <h2>⚠️ Ameaças Comuns às Minas de Água</h2>
             <ul class="lista-padrao">
-                <li><strong>Contaminação de aquíferos</strong> e recursos hídricos</li>
-                <li><strong>Danos à fauna e flora</strong> local</li>
-                <li><strong>Problemas de saúde</strong> em pessoas e animais</li>
-                <li><strong>Penalidades legais</strong> ao produtor</li>
-                <li><strong>Impacto ambiental</strong> de longo prazo</li>
+                <li><strong>Desmatamento:</strong> Remove proteção natural e aumenta erosão</li>
+                <li><strong>Contaminação química:</strong> Fertilizantes e agrotóxicos infiltram no solo</li>
+                <li><strong>Compactação do solo:</strong> Reduz infiltração de água</li>
+                <li><strong>Pisoteio de animais:</strong> Degrada a área de recarga</li>
+                <li><strong>Acúmulo de lixo:</strong> Descarte inadequado de resíduos</li>
+                <li><strong>Crescimento excessivo de algas:</strong> Indica eutrofização e poluição</li>
+                <li><strong>Bombeamento excessivo:</strong> Reduz disponibilidade de água</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>🔬 Como Avaliar a Qualidade da Água</h2>
+            <ul class="lista-padrao">
+                <li><strong>Cor:</strong> Água limpa deve ser incolor. Tonalidades marrom, verde ou turva indicam contaminação</li>
+                <li><strong>Odor:</strong> Odor desagradável sinaliza presença de matéria orgânica em decomposição</li>
+                <li><strong>Transparência:</strong> Água clara é indicativo de boa qualidade</li>
+                <li><strong>Presença de espuma ou algas:</strong> Indica poluição por matéria orgânica</li>
+                <li><strong>Testes laboratoriais:</strong> Realize análises periódicas de pH, bactérias e contaminantes</li>
+            </ul>
+            <div class="tip">
+                <h4>💡 Dica Importante</h4>
+                <p>Solicite análises de água ao órgão ambiental local ou laboratórios credenciados anualmente para garantir a potabilidade.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>📋 Legislação e Responsabilidade</h2>
+            <p>No Brasil, os recursos hídricos são regulados pela Lei nº 9.433/97 (Lei das Águas) e pela Constituição Federal. O proprietário rural é responsável pela proteção e preservação de nascentes e minas em suas propriedades. O desmatamento de áreas de preservação permanente (APP) e a contaminação de recursos hídricos podem resultar em multas ambientais significativas.</p>
+            <div class="alerta">
+                <h4>⚠️ Aviso Legal</h4>
+                <p>Consulte órgãos ambientais estaduais ou municipais para orientações específicas sobre sua região e obrigações legais.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🎯 Checklist de Preservação</h2>
+            <ul class="lista-padrao">
+                <li>☐ Delimitou a zona de proteção ao redor da mina?</li>
+                <li>☐ Cercou a área para evitar entrada de animais?</li>
+                <li>☐ Removeu possíveis fontes de contaminação?</li>
+                <li>☐ Realizou limpeza da área nos últimos 6 meses?</li>
+                <li>☐ Verificou a qualidade visual da água recentemente?</li>
+                <li>☐ Coletou amostra de água para análise laboratorial?</li>
+                <li>☐ Plantou ou mantém vegetação nativa ao redor?</li>
+                <li>☐ Orientou trabalhadores sobre a importância da preservação?</li>
+                <li>☐ Documentou mudanças na vazão ou qualidade da água?</li>
             </ul>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Agrinho | Descarte Correto de Embalagens de Defensivos Agrícolas</p>
-        <p>Lei nº 9.974/00 - Responsabilidade Compartilhada</p>
+        <p>&copy; 2026 - Agrinho | Preservação de Minas de Água no Campo</p>
+        <p>Lei nº 9.433/97 - Política Nacional de Recursos Hídricos</p>
     </footer>
 
 </body>
